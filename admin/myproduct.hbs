@@ -1,0 +1,72 @@
+<main class="admin-create-product-page">
+    <div class="box-title-admin">
+        <h1>Quản trị sản phẩm</h1>
+        <div class="path">
+            <a href="/">Trang chủ</a>
+            /
+            <span>Quản trị sản phẩm</span>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="title-admin-sub">
+            <h2>Thêm sản phẩm</h2>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="box-form-create">
+            <form action="" method="post" class="">
+                <div class="form-group">
+                    <label for="nameProduct">Tên sản phẩm:</label>
+                    <input type="text" class="form-control" id="nameProduct"  placeholder="Tên sản phẩm . . ." required>
+                    <div class="invalid-feedback">Không được để trống!</div>
+                </div>
+                <div class="form-group">
+                    <label for="priceProduct">Đơn giá: </label>
+                    <input type="number" class="form-control" id="priceProduct"  placeholder="Giá sản phẩm . . ." required>
+                    <div class="invalid-feedback">Không được để trống!</div>
+                </div>
+                <div class="form-group">
+                    <label for="saleProduct">Giảm giá (đơn vị %): </label>
+                    <input type="number" class="form-control" id="saleProduct"  placeholder="Đơn vị giảm % " required>
+                    <div class="invalid-feedback">Không được để trống!</div>
+                </div>
+                <div class="form-group">
+                    <label for="categoryProduct">Loại sản phẩm:</label>
+                    <select class="form-control" id="categoryProduct" required>
+                        <option value=''>-- Chọn loại SP --</option>
+                        <option>Rau củ quả</option>
+                        <option>Trứng</option>
+                        <option>Thịt</option>
+                        <option>Hàng đông lạnh</option>
+                        <option>Hải sản</option>
+                        <option>Sữa</option>
+                    </select>
+                    <div class="invalid-feedback">Không được để trống!</div>
+                </div>
+                <div class="form-group" >
+                    <label for="">Ảnh sản phẩm:</label>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="imageProduct" required>
+                        <label class="custom-file-label" for="imageProduct">Chọn file...</label>
+                    <div class="invalid-feedback">Không được để trống!</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="informationProduct">Mô tả sản phẩm</label>
+                    <textarea type="text" class="form-control" id="informationProduct"  placeholder="Tên sản phẩm . . ."></textarea>
+                    
+                </div>
+                
+                <button type="submit" class="btn btn-primary bnt-submit-create-product">Thêm mới</button>
+            </form>
+        </div>
+    </div>
+</main>
+<script>
+    const bntSubmitForm = document.querySelector('.bnt-submit-create-product');
+    const formCreate = document.querySelector('.admin-create-product-page form');
+    bntSubmitForm.onclick = function (){
+        formCreate.classList.remove('was-validated');
+        formCreate.classList.add('was-validated');
+    }
+</script>
