@@ -1,0 +1,183 @@
+{
+  "products": [
+    {
+      "name": "Cá hồi",
+      "slug": "ca-hoi",
+      "price": 200000,
+      "discount": 33,
+      "category": "3",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp10.jpg?v=1625546411053",
+      "description": "Tiết kiệm: 100.000₫ so với giá thị trường",
+      "createdAt": 1633406176000,
+      "id": "33110000203123114314341",
+      "updatedAt": 1633676935000
+    },
+    {
+      "name": "Thịt gà",
+      "slug": "thit-ga",
+      "price": 110000,
+      "discount": 20,
+      "category": "3",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp26.jpg?v=1625546066287",
+      "description": "Thịt gà có thể được chế biến theo nhiều cách khác nhau tùy theo mục đích của chúng, bao gồm bỏ lò, nướng, quay, chiên hoặc luộc, cùng nhiều phương pháp khác. Kể từ nửa sau của thế kỷ 20, thịt gà chế biến sẵn đã trở thành một mặt hàng chủ yếu của dòng thực phẩm thức ăn nhanh. Loại thịt này đôi khi được coi là tốt cho sức khỏe hơn thịt đỏ, trong đó nồng độ cholesterol và chất béo bão hòa thấp hơn hẳn.",
+      "createdAt": 1633456976000,
+      "id": "124241334444034003340213",
+      "updatedAt": 1633676946000
+    },
+    {
+      "name": "Trứng gà",
+      "slug": "trung-ga",
+      "price": 30000,
+      "discount": 10,
+      "category": "3",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp29.jpg?v=1625545864797",
+      "description": "Trứng (miền Nam gọi là hột) là sản phẩm động vật từ các loại gia cầm, chim chóc đẻ ra, thường được sử dụng làm nguồn thức ăn cung cấp protein cho người. Bề ngoài của trứng thường có hình bầu dục, hai đầu không cân bằng, một to một nhỏ. Các loại trứng phổ biến nhất là trứng gà, trứng vịt (trứng lộn), trứng chim cút (trứng cút) ngoài ra còn có trứng ngỗng, trứng đà điểu.",
+      "createdAt": 1633456576000,
+      "id": "24023101110241040230214",
+      "updatedAt": 1633676952000
+    },
+    {
+      "name": "Ớt chuông xanh",
+      "slug": "ot-chuong-xanh",
+      "price": 12000,
+      "discount": 10,
+      "category": "1",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp17-2.jpg?v=1625547082403",
+      "description": "Ớt chuông, hay còn gọi là ớt ngọt (gọi là pepper ở Vương quốc Liên hiệp Anh và Bắc Ireland, Canada, Ireland hay capsicum ở Ấn Độ, Bangladesh, Úc, Singapore và New Zealand), là quả của một nhóm cây trồng, loài Capsicum annuum.",
+      "createdAt": 1633452576000,
+      "id": "3314034043112334333323",
+      "updatedAt": 1633676970000
+    },
+    {
+      "id": "3223320403020242222041",
+      "name": "Ổi lê ruột đỏ",
+      "slug": "oi-le-ruot-do",
+      "price": 20000,
+      "discount": 10,
+      "category": "2",
+      "createdAt": 1633416576000,
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp22.jpg?v=1628522988073",
+      "description": "Cây ổi nhỏ hơn cây vải, nhãn, cao nhiều nhất 10m, đường kính thân tối đa 30 cm. Những giống mới còn nhỏ và lùn hơn nữa",
+      "updatedAt": 1633676976000
+    },
+    {
+      "name": "Ớt chuông vàng",
+      "slug": "ot-chuong-vang",
+      "price": 20000,
+      "discount": 12,
+      "category": "1",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp19.jpg?v=1625547134823",
+      "description": "Ớt chuông, hay còn gọi là ớt ngọt (gọi là pepper ở Vương quốc Liên hiệp Anh và Bắc Ireland, Canada, Ireland hay capsicum ở Ấn Độ, Bangladesh, Úc, Singapore và New Zealand), là quả của một nhóm cây trồng, loài Capsicum annuum.",
+      "createdAt": 1633456876000,
+      "id": "14343444343304321204412",
+      "updatedAt": 1633676984000
+    },
+    {
+      "name": "Hành tây",
+      "slug": "hanh-tay",
+      "price": 18000,
+      "discount": 10,
+      "category": "1",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp7.jpg?v=1625547385647",
+      "description": "Hành tây vừa được xem là một loại gia vị vừa như một loại rau rất giàu Kali, Selen, Vitamin C và Quercetin. Trong củ hành đỏ rất giàu các hợp chất và nhóm lưu huỳnh như DMS, DDS, DTS & DTTS gây mùi cay nồng.",
+      "createdAt": 1633456576300,
+      "id": "43022334444022104144223",
+      "updatedAt": 1633676992000
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "email": "vodinh2000ht@gmail.com",
+      "password": "$2a$10$CtQvEsTzSwIPbOtBeeOxKOrm2Nv3hzgsOT7/lK4v7DR3vVF2mhuXS",
+      "firtname": "Võ",
+      "lastname": "Định",
+      "phone": "+84329766459",
+      "id": 1
+    },
+    {
+      "email": "tienph12196@gmail.com",
+      "password": "$2a$10$n5RRTkX7qCsfWUxkzU69aOEPLsHOW/WNoky/VhRhqxJoHbjsqNOsu",
+      "firtname": "Tiến",
+      "lastname": "Trần",
+      "phone": "032554675",
+      "id": 2
+    },
+    {
+      "email": "truongdang1997@gmail.com",
+      "password": "$2a$10$jOahIH24j9YME8up3RRkEOncwxpUOfGc7XEwTCtvVmQubF4ykFJq6",
+      "firtname": "Trường",
+      "lastname": "Trọng",
+      "phone": "01642325546",
+      "id": 3
+    },
+    {
+      "email": "tronganhph13025@gmail.com",
+      "password": "$2a$10$WtrZ3fIGfvlkThE3R7LC/.uNK21/259xdIv2u/ibeQo673gjFd9lO",
+      "firtname": "Anh",
+      "lastname": "Trọng ",
+      "phone": "2455544224",
+      "id": 4
+    },
+    {
+      "email": "vodinh200x0ht@gmail.com",
+      "password": "$2a$10$tf.pmF6kI11M/.VmIpDg1utQisuQcy30I7ftiIzKXewVh/dZUWaze",
+      "firtname": "Võ",
+      "lastname": "Định",
+      "phone": "+84329766459",
+      "id": 5
+    },
+    {
+      "email": "vodinh20c00ht@gmail.com",
+      "password": "$2a$10$FTvkGC0bsK5czvmQriEFae044ozpM28qVrUvOKVt/SWHBNKO5NHcG",
+      "firtname": "Võ",
+      "lastname": "Định",
+      "phone": "+84329766459",
+      "id": 6
+    },
+    {
+      "email": "tuantaitu@gmail.com",
+      "password": "$2a$10$E39ytYN99G/6NGY20hWsAe9/12Zbn9ri4KpCvk2PYv.ZW5k4qgsby",
+      "firtname": "Võ",
+      "lastname": "Định",
+      "phone": "+84329766459",
+      "id": 7
+    },
+    {
+      "email": "tien1998@gmail.com",
+      "password": "$2a$10$qSRFOqMqE.eNB8ReQxmfgeWFlHUVHmRIqx8Nvih8jS6.tYhJYBSKK",
+      "firtname": "Võ",
+      "lastname": "Định",
+      "phone": "+84329766459",
+      "id": 8
+    },
+    {
+      "email": "dinhvvph13024@fpt.edu.vn",
+      "password": "$2a$10$v0Dvp6pGqCJ/H9YAf1K7L.SZayynoqSvLWiaC1OsznQN46agTBxBq",
+      "firtname": "Võ",
+      "lastname": "Định",
+      "phone": "+84329766459",
+      "id": 9
+    },
+    {
+      "email": "vodinh200d0ht@gmail.com",
+      "password": "$2a$10$KbBByrXy0S72mk2B6cTpbuifE2cBkFkSdhHRaKKBVXmZSIOYdswK.",
+      "firtname": "Võ",
+      "lastname": "Định",
+      "phone": "+84329766459",
+      "id": 10
+    },
+    {
+      "email": "vodinh20dd00ht@gmail.com",
+      "password": "$2a$10$IylBlcT5Qnwv3vYmiX50Xei.mSXHop8o4D.dbQ6lnEgGuGZIDWZiq",
+      "firtname": "Võ",
+      "lastname": "Định",
+      "phone": "+84329766459",
+      "id": 11
+    }
+  ],
+  "categorys": []
+}

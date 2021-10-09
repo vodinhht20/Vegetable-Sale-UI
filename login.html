@@ -29,7 +29,7 @@
                         <ul>
                             <li><a href="/">Trang chủ</a></li>
                             <li><a href="">Giới thiệu</a></li>
-                            <li><a href="">Sản phẩm</a></li>
+                            <li><a href="./product.html">Sản phẩm</a></li>
                             <li><a href="">Tin tức</a></li>
                             <li><a href="">Liên hệ</a></li>
                         </ul>
@@ -56,7 +56,7 @@
                         <ul>
                             <li><a href="">Trang chủ</a></li>
                             <li><a href="">Giới thiệu</a></li>
-                            <li><a href="">Sản phẩm</a></li>
+                            <li><a href="./product.html">Sản phẩm</a></li>
                             <li><a href="">Tin tức</a></li>
                             <li><a href="">Liên hệ</a></li>
                         </ul>
@@ -124,7 +124,7 @@
                     </ul>
                 </div>
                 <div class="form-login">
-                    <form action="">
+                    <form action="" id="login">
                         <div class="form-group">
                             <label for="accEmail">Email</label>
                             <input type="text" class="form-control" id="accEmail" placeholder="Nhập địa chỉ email" required>
@@ -140,6 +140,7 @@
                         </div>
                         <button type="submit" class="btn btn-dark">Đăng nhập</button>
                     </form>
+                    <div id="notify"></div>
                 </div>
                 <div class="line-break mt-4">
                     <span>hoặc đăng nhập bằng</span>
@@ -153,23 +154,6 @@
 
         </div>
     </main>
-    <script>
-        const txtInput = document.querySelectorAll('.form-group input');
-        txtInput.forEach(function(item, index) {
-            item.oninput = function() {
-                if (item.value.trim() == '') {
-                    item.style.border = '1px solid red';
-                    if (item.parentNode.children[2]) {
-                        item.parentNode.removeChild(item.parentNode.children[2]);
-                    }
-                    item.insertAdjacentHTML('afterend', '<span class="error-messenger">Không được để trống ở đây !</span>');
-                } else {
-                    item.style.border = '1px solid #ced4da';
-                    item.parentNode.removeChild(item.parentNode.children[2]);
-                }
-            }
-        })
-    </script>
     <footer class="mt-5">
         <div class="box-footer">
             <div class="container">
@@ -218,6 +202,9 @@
     <script src="./public/owlcarousel/owl.carousel.min.js"></script>
     <script src="./public/js/main.js"></script>
 
+    <!-- js main -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./module/login.js"></script>
 
 </body>
 

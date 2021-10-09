@@ -1,0 +1,423 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trang quản trị</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+    <meta content="Coderthemes" name="author">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../public/image/logo.png">
+
+    <!-- plugin css -->
+    <link href="assets\libs\jquery-vectormap\jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css">
+
+    <!-- App css -->
+    <link href="assets\css\bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets\css\icons.min.css" rel="stylesheet" type="text/css">
+    <link href="assets\css\app.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Topbar Start -->
+        <div class="navbar-custom">
+            <ul class="list-unstyled topnav-menu float-right mb-0">
+
+                <li class="d-none d-sm-block">
+                    <form class="app-search">
+                        <div class="app-search-box">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <div class="input-group-append">
+                                    <button class="btn" type="submit">
+                                        <i class="fe-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown"
+                        href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="assets\images\users\user-1.jpg" alt="user-image" class="rounded-circle">
+                        <span class="pro-user-name ml-1">
+                            Marcia J. <i class="mdi mdi-chevron-down"></i>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                        <!-- item-->
+                        <div class="dropdown-item noti-title">
+                            <h5 class="m-0 text-white">
+                                Welcome !
+                            </h5>
+                        </div>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-user"></i>
+                            <span>My Account</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-settings"></i>
+                            <span>Settings</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-lock"></i>
+                            <span>Lock Screen</span>
+                        </a>
+
+                        <div class="dropdown-divider"></div>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-log-out"></i>
+                            <span>Logout</span>
+                        </a>
+
+                    </div>
+                </li>
+
+                <li class="dropdown notification-list">
+                    <a href="javascript:void(0);" class="nav-link right-bar-toggle waves-effect waves-light">
+                        <i class="fe-settings noti-icon"></i>
+                    </a>
+                </li>
+
+
+            </ul>
+
+            <!-- LOGO -->
+            <div class="logo-box">
+                <a href="../index.html" class="logo text-center">
+                    <span class="logo-lg">
+                        <img src="../public/image/logo.png" alt="" height="50">
+                        <!-- <span class="logo-lg-text-light">Upvex</span> -->
+                    </span>
+                    <span class="logo-sm">
+                        <!-- <span class="logo-sm-text-dark">X</span> -->
+                        <img src="../public/image/logo.png" alt="" height="58">
+                    </span>
+                </a>
+            </div>
+
+            <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+                <li>
+                    <button class="button-menu-mobile waves-effect waves-light">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <!-- end Topbar -->
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="left-side-menu">
+
+            <div class="slimscroll-menu">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+
+                    <ul class="metismenu" id="side-menu">
+
+                        <li class="menu-title">v1</li>
+
+                        <li>
+                            <a href="javascript: void(0);">
+                                <i class="la la-dashboard"></i>
+                                <span class="badge badge-info badge-pill float-right">2</span>
+                                <span>Tổng Quát</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);">
+                                <i class="la la-cube"></i>
+                                <span>Quản Trị</span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li>
+                                    <a href="apps-calendar.html">Sản phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="apps-contacts.html">Loại sản phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="apps-tickets.html">Thành viên</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-title mt-2">v2</li>
+                        <li>
+                            <a href="javascript: void(0);">
+                                <i class="la la-map"></i>
+                                <span>Đơn Hàng</span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li>
+                                    <a href="maps-google.html">Quản lý đơn hàng</a>
+                                </li>
+                                <li>
+                                    <a href="maps-vector.html">Hoàn trả</a>
+                                </li>
+                                <li>
+                                    <a href="maps-mapael.html">Doanh thu</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- End Sidebar -->
+
+                <div class="clearfix"></div>
+
+            </div>
+            <!-- Sidebar -left -->
+
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Upvex</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboards</a></li>
+                                        <li class="breadcrumb-item active">Dashboard</li>
+                                    </ol>
+                                </div>
+                                <h4 class="page-title">Dashboard</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+                    <!-- nội dung -->
+                    <div class="title-admin-sub">
+                        <h2 class="text-primary">Thêm sách sản phẩm</h2>
+                    </div>
+                    <div class="box-form-create">
+                        <form action="" method="post" class="" id="form-add">
+                            <div class="form-group">
+                                <label for="nameProduct">Tên sản phẩm:</label>
+                                <input type="text" class="form-control" id="nameProduct"  placeholder="Tên sản phẩm . . ." required>
+                                <div class="invalid-feedback">Không được để trống!</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="priceProduct">Đơn giá: </label>
+                                <input type="number" class="form-control" id="priceProduct"  placeholder="Giá sản phẩm . . ." required>
+                                <div class="invalid-feedback">Không được để trống!</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="saleProduct">Giảm giá (đơn vị %): </label>
+                                <input type="number" class="form-control" id="saleProduct"  placeholder="Đơn vị giảm % " required>
+                                <div class="invalid-feedback">Không được để trống!</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="categoryProduct">Loại sản phẩm:</label>
+                                <select class="form-control" id="categoryProduct" required>
+                                    <option value=''>-- Chọn loại SP --</option>
+                                    <option value='1'>Rau củ quả</option>
+                                    <option value='2'>Trái Cây</option>
+                                    <option value='3'>Thực phẩm tươi</option>
+                                </select>
+                                <div class="invalid-feedback">Không được để trống!</div>
+                            </div>
+                            <div class="form-group" >
+                                <label for="nameImage">Link ảnh:</label>
+                                <input type="text" class="form-control" id="nameImage"  placeholder="Link ảnh . . ." required>
+                                <img id="showImager" src="" width="100" alt="Đường link không hợp lệ">
+                                <div class="invalid-feedback">Không được để trống!</div>
+                               
+                            </div>
+                            <div class="form-group">
+                                <label for="informationProduct">Mô tả sản phẩm</label>
+                                <textarea type="text" class="form-control" id="informationProduct"  placeholder="Tên sản phẩm . . ."></textarea>
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-primary ">Thêm mới</button>
+                                <a type="submit" href="index.html" class="btn btn-primary">Xem danh sách</a>
+                            </div>
+                        </form>
+                    </div>
+                </div> <!-- container -->
+
+            </div> <!-- content -->
+
+            <!-- Footer Start -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            &copy; Copyright 2021 <a href="">Fpoly Shop</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end Footer -->
+
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+
+    </div>
+    <!-- END wrapper -->
+
+    <!-- Right Sidebar -->
+    <div class="right-bar">
+        <div class="rightbar-title">
+            <a href="javascript:void(0);" class="right-bar-toggle float-right">
+                <i class="mdi mdi-close"></i>
+            </a>
+            <h5 class="m-0 text-white">Settings</h5>
+        </div>
+        <div class="slimscroll-menu">
+            <!-- User box -->
+            <div class="user-box">
+                <div class="user-img">
+                    <img src="assets\images\users\user-1.jpg" alt="user-img" title="Mat Helme"
+                        class="rounded-circle img-fluid">
+                    <a href="javascript:void(0);" class="user-edit"><i class="mdi mdi-pencil"></i></a>
+                </div>
+
+                <h5><a href="javascript: void(0);">Marcia J. Melia</a> </h5>
+                <p class="text-muted mb-0"><small>Product Owner</small></p>
+            </div>
+
+            <!-- Settings -->
+            <hr class="mt-0">
+            <div class="row">
+                <div class="col-6 text-center">
+                    <h4 class="mb-1 mt-0">8,504</h4>
+                    <p class="m-0">Balance</p>
+                </div>
+                <div class="col-6 text-center">
+                    <h4 class="mb-1 mt-0">8,504</h4>
+                    <p class="m-0">Balance</p>
+                </div>
+            </div>
+            <hr class="mb-0">
+
+            <div class="p-3">
+                <div class="custom-control custom-switch mb-2">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+                    <label class="custom-control-label" for="customSwitch1">Notifications</label>
+                </div>
+                <div class="custom-control custom-switch mb-2">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                    <label class="custom-control-label" for="customSwitch2">API Access</label>
+                </div>
+                <div class="custom-control custom-switch mb-2">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch3" checked="">
+                    <label class="custom-control-label" for="customSwitch3">Auto Updates</label>
+                </div>
+                <div class="custom-control custom-switch mb-2">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch4" checked="">
+                    <label class="custom-control-label" for="customSwitch4">Online Status</label>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <hr class="mt-0">
+            <h5 class="pl-3 pr-3">Messages <span class="float-right badge badge-pill badge-danger">25</span></h5>
+            <hr class="mb-0">
+            <div class="p-3">
+                <div class="inbox-widget">
+                    <div class="inbox-item">
+                        <div class="inbox-item-img"><img src="assets\images\users\user-2.jpg" class="rounded-circle"
+                                alt=""></div>
+                        <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Tomaslau</a></p>
+                        <p class="inbox-item-text">I've finished it! See you so...</p>
+                    </div>
+                    <div class="inbox-item">
+                        <div class="inbox-item-img"><img src="assets\images\users\user-3.jpg" class="rounded-circle"
+                                alt=""></div>
+                        <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a>
+                        </p>
+                        <p class="inbox-item-text">This theme is awesome!</p>
+                    </div>
+                    <div class="inbox-item">
+                        <div class="inbox-item-img"><img src="assets\images\users\user-4.jpg" class="rounded-circle"
+                                alt=""></div>
+                        <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
+                        <p class="inbox-item-text">Nice to meet you</p>
+                    </div>
+
+                    <div class="inbox-item">
+                        <div class="inbox-item-img"><img src="assets\images\users\user-5.jpg" class="rounded-circle"
+                                alt=""></div>
+                        <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Shahedk</a></p>
+                        <p class="inbox-item-text">Hey! there I'm available...</p>
+                    </div>
+                    <div class="inbox-item">
+                        <div class="inbox-item-img"><img src="assets\images\users\user-6.jpg" class="rounded-circle"
+                                alt=""></div>
+                        <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Adhamdannaway</a>
+                        </p>
+                        <p class="inbox-item-text">This theme is awesome!</p>
+                    </div>
+                </div> <!-- end inbox-widget -->
+            </div> <!-- end .p-3-->
+
+        </div> <!-- end slimscroll-menu-->
+    </div>
+    <!-- /Right-bar -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- Vendor js -->
+    <script src="assets\js\vendor.min.js"></script>
+
+    <!-- Third Party js-->
+    <script src="assets\libs\peity\jquery.peity.min.js"></script>
+    <script src="assets\libs\apexcharts\apexcharts.min.js"></script>
+    <script src="assets\libs\jquery-vectormap\jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="assets\libs\jquery-vectormap\jquery-jvectormap-us-merc-en.js"></script>
+
+    <!-- Dashboard init -->
+    <script src="assets\js\pages\dashboard-1.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets\js\app.min.js"></script>
+
+    <!-- js main -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../module/add-product.js"></script>
+
+</body>
+
+</html>

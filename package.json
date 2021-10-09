@@ -1,0 +1,24 @@
+{
+  "name": "Assginment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server-auth --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vodinhht20/Assginment-JS-NangCao.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vodinhht20/Assginment-JS-NangCao/issues"
+  },
+  "homepage": "https://github.com/vodinhht20/Assginment-JS-NangCao#readme",
+  "description": "",
+  "devDependencies": {
+    "json-server": "^0.16.3",
+    "json-server-auth": "^2.1.0"
+  }
+}

@@ -118,6 +118,57 @@
     background-color: #177e45;
 }
 
+.header .header-rights .search .result-search {
+    position: absolute;
+    width: 300px;
+    max-height: 150px;
+    background-color: #fbfbfb;
+    top: 55px;
+    left: 0;
+    z-index: 11;
+    border-radius: 5px;
+    padding: 10px 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: none;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #177e45;
+}
+.header .header-rights .search .result-search .result-item {
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+.header .header-rights .search .result-search .result-item img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid rgb(211, 208, 208);
+    margin-right: 5px;
+}
+.header .header-rights .search .result-search .result-item a{
+    display: flex;
+    text-decoration: none;
+    color: #177e45;
+}
+.header .header-rights .search .result-search .result-item a .product-name{
+    transition: 0.2s;
+}
+.header .header-rights .search .result-search .result-item a:hover .product-name{
+    color: #ffb416;
+}
+.header .header-rights .search .result-search .result-item span{
+    display: block;
+}
+.header .header-rights .search .result-search .result-item .product-price{
+    color: rgb(223, 66, 66);
+}
+
 .header .header-rights .favorite-cart-account {
     display: flex;
     margin-left: 20px;
@@ -514,7 +565,7 @@ footer::before {
     position: absolute;
     width: 100%;
     height: 47px;
-    top: -47px;
+    top: -46px;
     z-index: 9;
     left: 0;
 }
@@ -1110,13 +1161,14 @@ footer::before {
 }
 
 .box-title-admin {
-    background-image: url(../../image/bg-breadcrumb.jpg);
+    background-image: url(../image/bg-breadcrumb.jpg);
     height: 200px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-size: cover;
 }
 
 .box-title-admin h1 {
@@ -1151,6 +1203,68 @@ footer::before {
     margin: 20px auto;
 }
 
+.search-page .select-sort {
+    height: 50px;
+}
+.search-page .aside-left .title-list{
+    background-color: #3ba66b;
+    padding: 5px 10px;
+    border-radius: 10px 10px 0 0;
+}
+.search-page .aside-left .title-list h5 {
+    font-size: 18px;
+    padding: 5px 0;
+}
+.search-page .option-sort {
+    height: 50px;
+    border-bottom: 1px solid #c2c2c2;
+}
+.search-page .option-sort select {
+    min-width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+}
+.search-page .option-sort label {
+    font-size: 18px;
+}
+.search-page .option-sort label i {
+    color: #177e45;
+}
+.search-page .list_category ul {
+    list-style-type: none;
+}
+.search-page .list_category li {
+    padding: 5px 0;
+}
+.search-page .aside-left .list-content{
+    border: 1px solid #d7d8d8;
+    border-radius: 0 0 10px 10px;
+    padding: 10px 20px;
+}
+.search-page .aside-left .list-content a{
+    color: #444;
+    text-decoration: none;
+    transition: 0.1s;
+}
+.search-page .aside-left .list-content a:hover {
+    color: #ffb416;
+}
+.search-page .filter-list .form-check{
+    padding: 10px;
+}
+.search-page .filter-list .form-check input{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.search-page .filter-list .form-check label:hover {
+    cursor: pointer;
+    transition: 0.1s;
+}
+.search-page .filter-list .form-check label:hover {
+    color: #ffb416;
+}
 .search-page .result-search {
     padding: 10px;
     border-bottom: 1px solid gainsboro;
@@ -1392,4 +1506,109 @@ footer::before {
 
 .account-page .account-main .login-social-network a:hover {
     opacity: 0.9;
+}
+/* product -detail */
+.product-detail-page .title-product {
+    font-size: 23px;
+    color: #444;
+}
+.product-detail-page .description .price {
+    font-size: 23px;
+    color: #e75757;
+    font-weight: 700;
+}
+.product-detail-page .description .price-root {
+    font-size: 18px;
+    color: #919191;
+    text-decoration: line-through;
+    font-style: italic;
+    padding-left: 10px;
+}
+.product-detail-page .description h4{
+    font-size: 18px;
+}
+.product-detail-page .description .mass .select-mass{
+    display: flex;
+}
+.product-detail-page .description .mass .select-mass div {
+    padding: 10px;
+    background-color: #b4b4b4;
+    margin:0 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #fff;
+}
+.product-detail-page .description .mass .select-mass .active {
+    background-color: #177e45;
+}
+.product-detail-page .description .quantity .input{
+    position: relative;
+    display: inline;
+}
+.product-detail-page .description .quantity .input input {
+    border-radius: 40px;
+    height: 45px;
+    border: 1px solid #919191;
+    outline: none;
+    padding: 0 40px;
+    width: 150px;
+    transition: 0.1s;
+    font-size: 25px;
+    color: rgb(114, 111, 111);
+    text-align: center;
+}
+.product-detail-page .description .quantity .input input:focus {
+    border: 1px solid #17af63;
+}
+.product-detail-page .description .quantity .input button {
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    font-size: 20px;
+    padding: 5px;
+    top: -10px;
+    color: #444;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.product-detail-page .description .quantity .input button:hover {
+    color: #177e45;
+
+}
+.product-detail-page .description .quantity .input button i{
+    font-weight: 700;
+
+}
+
+
+.product-detail-page .description .quantity .input .bnt-plus{
+    left: 10px;
+}
+.product-detail-page .description .quantity .input .bnt-minus {
+    right: 10px;
+}
+.product-detail-page .description .bnt-order {
+    display: flex;
+    margin: 10px;
+}
+.product-detail-page .description .bnt-order button {
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: #fff;
+    outline: none;
+    margin-right: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+    border: none;
+}
+.product-detail-page .description .bnt-order .bnt-buy-now {
+    background-color: rgb(223, 66, 66);
+}
+.product-detail-page .description .bnt-order .bnt-add-cart {
+    background-color: #177e45;
+}
+.product-detail-page .description .bnt-order button:hover {
+    opacity: 0.9;
+    box-shadow: 0px 1px 20px 0px rgb(158 158 158 / 54%), 0px 0px 9px 0px rgb(0 0 0 / 24%);
 }
