@@ -85,7 +85,7 @@
       "updatedAt": 1633676992000
     }
   ],
-  "comments": [],
+  "categories": [],
   "profile": {
     "name": "typicode"
   },
@@ -177,6 +177,14 @@
       "lastname": "Định",
       "phone": "+84329766459",
       "id": 11
+    },
+    {
+      "email": "anhem123@gmail.com",
+      "password": "$2a$10$Airqg8zc9O6rjjCcI8SZ7e46sc.Ks0hshXtpX5LudxPfTpMrtsQSK",
+      "firtname": "Võ",
+      "lastname": "Định",
+      "phone": "+84329766459",
+      "id": 12
     }
   ],
   "categorys": []

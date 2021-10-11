@@ -11,7 +11,7 @@ var url = window.location.search;
                     count = ++index;
                     return `<div class="product-item col-lg-3 col-md-4 col-sm-6 col-sx-12"">
                                 <div class="product-image">
-                                    <a href="">
+                                    <a href="./product-detail.html?slug=${post.slug}">
                                         <img src="${post.image}" alt="${post.image}">
                                     </a>
                                     <div class="icon-on-image-product">
@@ -20,7 +20,7 @@ var url = window.location.search;
                                     </div>
                                 </div>
                                 <div class="product-information">
-                                    <a href="">
+                                    <a href="./product-detail.html?slug=${post.slug}">
                                         <p>${post.name}</p>
                                         <div class="box-price">
                                             <span class="price-primary">${post.price} đ</span>
