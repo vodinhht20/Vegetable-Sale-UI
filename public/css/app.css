@@ -1925,3 +1925,75 @@ footer::before {
     font-size: 20px;
     outline: none;
 }
+/* order page */
+.order-page .shipping-methods {
+    padding: 10px 20px;
+    border: 1px solid rgb(223, 223, 223);
+    height: 40px;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #ebe6e6;
+}
+.order-page .shipping-methods p{
+    margin: 0;
+    flex: 1;
+    margin: 0 20px;
+    font-size: 16px;
+}
+.order-page .shipping-methods input{
+    width: 20px;
+    height: 20px;
+}
+.order-page .shipping-methods i{
+    font-size: 20px;
+}
+.box-order {
+    background-color: #ebe9e9;
+    border-radius: 5px;
+}
+.order-page .show-order{ 
+    border-bottom: 1px solid rgb(221, 220, 220);
+    margin-bottom: 15px;
+}
+.order-page .show-order .product-item + .product-item{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.order-page .show-order .product-item .image-product {
+    position: relative;
+    margin-right: 20px;
+}
+.order-page .show-order .product-item .image-product img{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 1px solid rgb(231, 228, 228);
+}
+.order-page .show-order .product-item .image-product span{
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: #0c0c0c;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+.order-page .show-order .detail{
+    flex: 1;
+}
+.order-page .show-order .detail a{
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+}
+.order-page .show-order .detail span{
+    font-size: 15px;
+}
+.order-page .footer-aside a{
+    text-decoration: none;
+}

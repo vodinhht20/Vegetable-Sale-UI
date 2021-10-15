@@ -1,52 +1,52 @@
 {
   "products": [
     {
-      "name": "Cá hồi",
-      "slug": "ca-hoi",
+      "name": "Cá hồi new 123",
+      "slug": "ca-hoi-new-123",
       "price": 200000,
       "discount": 33,
-      "category": "3",
+      "category": 3,
       "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp10.jpg?v=1625546411053",
       "description": "Tiết kiệm: 100.000₫ so với giá thị trường",
       "createdAt": 1633406176000,
       "id": "33110000203123114314341",
-      "updatedAt": 1633676935000
+      "updatedAt": 1634299769000
     },
     {
-      "name": "Thịt gà",
-      "slug": "thit-ga",
+      "name": "Thịt gà new",
+      "slug": "thit-ga-new",
       "price": 110000,
       "discount": 20,
-      "category": "3",
+      "category": 3,
       "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp26.jpg?v=1625546066287",
       "description": "Thịt gà có thể được chế biến theo nhiều cách khác nhau tùy theo mục đích của chúng, bao gồm bỏ lò, nướng, quay, chiên hoặc luộc, cùng nhiều phương pháp khác. Kể từ nửa sau của thế kỷ 20, thịt gà chế biến sẵn đã trở thành một mặt hàng chủ yếu của dòng thực phẩm thức ăn nhanh. Loại thịt này đôi khi được coi là tốt cho sức khỏe hơn thịt đỏ, trong đó nồng độ cholesterol và chất béo bão hòa thấp hơn hẳn.",
       "createdAt": 1633456976000,
       "id": "124241334444034003340213",
-      "updatedAt": 1633676946000
+      "updatedAt": 1634147312000
     },
     {
       "name": "Trứng gà",
       "slug": "trung-ga",
       "price": 30000,
       "discount": 10,
-      "category": "3",
+      "category": 3,
       "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp29.jpg?v=1625545864797",
       "description": "Trứng (miền Nam gọi là hột) là sản phẩm động vật từ các loại gia cầm, chim chóc đẻ ra, thường được sử dụng làm nguồn thức ăn cung cấp protein cho người. Bề ngoài của trứng thường có hình bầu dục, hai đầu không cân bằng, một to một nhỏ. Các loại trứng phổ biến nhất là trứng gà, trứng vịt (trứng lộn), trứng chim cút (trứng cút) ngoài ra còn có trứng ngỗng, trứng đà điểu.",
       "createdAt": 1633456576000,
       "id": "24023101110241040230214",
-      "updatedAt": 1633676952000
+      "updatedAt": 1634147316000
     },
     {
       "name": "Ớt chuông xanh",
       "slug": "ot-chuong-xanh",
       "price": 12000,
       "discount": 10,
-      "category": "1",
+      "category": 1,
       "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp17-2.jpg?v=1625547082403",
       "description": "Ớt chuông, hay còn gọi là ớt ngọt (gọi là pepper ở Vương quốc Liên hiệp Anh và Bắc Ireland, Canada, Ireland hay capsicum ở Ấn Độ, Bangladesh, Úc, Singapore và New Zealand), là quả của một nhóm cây trồng, loài Capsicum annuum.",
       "createdAt": 1633452576000,
       "id": "3314034043112334333323",
-      "updatedAt": 1633676970000
+      "updatedAt": 1634147321000
     },
     {
       "id": "3223320403020242222041",
@@ -54,38 +54,117 @@
       "slug": "oi-le-ruot-do",
       "price": 20000,
       "discount": 10,
-      "category": "2",
+      "category": 2,
       "createdAt": 1633416576000,
       "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp22.jpg?v=1628522988073",
       "description": "Cây ổi nhỏ hơn cây vải, nhãn, cao nhiều nhất 10m, đường kính thân tối đa 30 cm. Những giống mới còn nhỏ và lùn hơn nữa",
-      "updatedAt": 1633676976000
+      "updatedAt": 1634147326000
     },
     {
       "name": "Ớt chuông vàng",
       "slug": "ot-chuong-vang",
       "price": 20000,
       "discount": 12,
-      "category": "1",
+      "category": 1,
       "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp19.jpg?v=1625547134823",
       "description": "Ớt chuông, hay còn gọi là ớt ngọt (gọi là pepper ở Vương quốc Liên hiệp Anh và Bắc Ireland, Canada, Ireland hay capsicum ở Ấn Độ, Bangladesh, Úc, Singapore và New Zealand), là quả của một nhóm cây trồng, loài Capsicum annuum.",
       "createdAt": 1633456876000,
       "id": "14343444343304321204412",
-      "updatedAt": 1633676984000
+      "updatedAt": 1634147333000
     },
     {
       "name": "Hành tây",
       "slug": "hanh-tay",
       "price": 18000,
       "discount": 10,
-      "category": "1",
+      "category": 1,
       "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp7.jpg?v=1625547385647",
       "description": "Hành tây vừa được xem là một loại gia vị vừa như một loại rau rất giàu Kali, Selen, Vitamin C và Quercetin. Trong củ hành đỏ rất giàu các hợp chất và nhóm lưu huỳnh như DMS, DDS, DTS & DTTS gây mùi cay nồng.",
       "createdAt": 1633456576300,
       "id": "43022334444022104144223",
-      "updatedAt": 1633676992000
+      "updatedAt": 1634147341000
+    },
+    {
+      "id": "24424043041041032201113",
+      "name": "Thịt lợn",
+      "slug": "thit-lon",
+      "price": 90000,
+      "discount": 10,
+      "category": 3,
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp28.jpg?v=1625545987807",
+      "description": "Thịt heo / thịt lợn là thịt từ heo, là một loại thực phẩm rất phổ biến trên thế giới, tiêu thụ thịt heo của người Việt chiếm tới 73,3%, thịt gia cầm là 17,5% và chỉ 9,2% còn lại là thịt các loại (thịt bò, thịt trâu, thịt dê..., điều này xuất phát từ truyền thống ẩm thực của người Việt thường ăn thịt heo và thịt gà nhiều hơn các loại thịt khác\n\nThịt lợn chứa hàm lượng protein cao cùng nhiều vitamin và khoáng chất. Thịt lợn nạc là một thực phẩm tuyệt vời cho chế độ ăn uống lành mạnh. Nó chứa tất cả các amino acid thiết yếu cho sự tăng trưởng và duy trì cơ thể khỏe mạnh. Mỡ lợn đôi khi được sử dụng như là một chất béo trong nấu ăn. Giống như các loại thịt đỏ, thịt lợn chủ yếu gồm các chất béo bão hòa và chất béo không bão hòa với hàm lượng tương đương nhau.Vitamin B12 trong thịt lợn rất quan trọng cho sự hình thành máu và chức năng của não. Thiếu hụt vitamin B12 có thể gây thiếu máu và tổn hại đến tế bào thần kinh. Vitamin B6 quan trọng đối với sự hình thành của các tế bào máu đỏ.",
+      "createdAt": 1634002971000,
+      "updatedAt": 1634147347000
+    },
+    {
+      "id": "23011330442101102143112",
+      "name": "Thịt bò",
+      "slug": "thit-bo",
+      "price": 160000,
+      "discount": 20,
+      "category": 3,
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp12.jpg?v=1625546619103",
+      "description": "Thịt bò là thịt của con bò (thông dụng là loại bò thịt). Đây là thực phẩm gia súc phổ biến trên thế giới, cùng với thịt lợn, được chế biến và sử dụng theo nhiều cách, trong nhiều nền văn hoá và tôn giáo khác nhau, cùng với thịt lợn và thịt gà, thịt bò là một trong những loại thịt được con người sử dụng nhiều nhất.\n\nLợi ích\n\nThịt bò là một trong những thực phẩm có giá trị dinh dưỡng cao và có chứa nhiều amino acid cần thiết, các chất béo, chất khoáng, vitamin.",
+      "createdAt": 1634003009000,
+      "updatedAt": 1634147363000
+    },
+    {
+      "id": "33023312312042131143033",
+      "name": "Cà chua",
+      "slug": "ca-chua",
+      "price": 15000,
+      "discount": 10,
+      "category": 1,
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp20.jpg?v=1625547217850",
+      "description": "Cà chua (danh pháp hai phần: Solanum lycopersicum), thuộc họ Cà (Solanaceae), là một loại rau quả làm thực phẩm. Quả ban đầu có màu xanh, chín ngả màu từ vàng đến đỏ. Cà chua có vị hơi chua và là một loại thực phẩm bổ dưỡng, giàu vitamin C và A, đặc biệt là giàu lycopeme tốt cho sức khỏe.\n\nCà chua thuộc họ Cà, các loại cây trong họ này thường phát triển từ 1 đến 3 mét chiều cao, có những cây thân mềm bò trên mặt đất hoặc dây leo trên thân cây khác, ví dụ nho. Họ cây này là một loại cây lâu năm trong môi trường sống bản địa của nó, nhưng nay nó được trồng như một loại cây hàng năm ở các vùng khí hậu ôn đới và nhiệt đới.",
+      "createdAt": 1634003073000,
+      "updatedAt": 1634147371000
+    },
+    {
+      "id": "13303341114132444401432",
+      "name": "Trái cam mật",
+      "slug": "trai-cam-mat",
+      "price": 138000,
+      "discount": 13,
+      "category": 2,
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp5.jpg?v=1625548796893",
+      "description": "Cam (danh pháp hai phần: Citrus × sinensis) là loài cây ăn quả cùng họ với bưởi. Nó có quả nhỏ hơn quả bưởi, vỏ mỏng, khi chín thường có màu da cam, có vị ngọt hoặc hơi chua. Loài cam là một cây lai được trồng từ xưa, có thể lai giống giữa loài bưởi (Citrus maxima) và quýt (Citrus reticulata). Đây là cây nhỏ, cao đến khoảng 10 m, có cành gai và lá thường xanh dài khoảng 4-10 cm. Cam bắt nguồn từ Đông Nam Á, có thể từ Ấn Độ, Việt Nam hay miền nam Trung Quốc ",
+      "createdAt": 1634003122000,
+      "updatedAt": 1634147376000
+    },
+    {
+      "id": "0212230222044142142400243",
+      "name": "Dâu tây",
+      "slug": "dau-tay",
+      "price": 138000,
+      "discount": 10,
+      "category": 2,
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp3.jpg?v=1628523053697",
+      "description": "Dâu tây (danh pháp khoa học: Fragaria) hay còn gọi là dâu đất là một chi thực vật hạt kín và loài thực vật có hoa thuộc họ Hoa hồng (Rosaceae) cho quả được nhiều người ưa chuộng. Dâu tây xuất xứ từ châu Mỹ và được các nhà làm vườn châu Âu cho lai tạo vào thế kỷ 18 để tạo nên giống dâu tây được trồng rộng rãi hiện nay. Loài này được (Weston) Duchesne miêu tả khoa học đầu tiên năm 1788 \n\nDâu tây được trồng lấy trái ở vùng ôn đới. Với mùi thơm hấp dẫn cùng vị dâu ngọt lẫn chua nên dâu tây được ưa chuộng.\n\nỞ Việt Nam, khí hậu mát mẻ của miền núi Đà Lạt là môi trường thích hợp với việc canh tác dâu nên loại trái cây này được xem là đặc sản của vùng cao nguyên nơi đây.\n\nQuả dâu tây thường được sử dụng để làm các món tráng miệng. Dâu tây giàu vitamin C và là nguồn cung cấp dồi dào các chất flavonoit cần thiết c",
+      "createdAt": 1634003155000,
+      "updatedAt": 1634147384000
     }
   ],
-  "categories": [],
+  "categories": [
+    {
+      "name": "Rau củ quả",
+      "disabled": false,
+      "createdAt": 1634144617000,
+      "id": 1
+    },
+    {
+      "name": "Trái Cây",
+      "disabled": false,
+      "createdAt": 1634144617000,
+      "id": 2
+    },
+    {
+      "name": "Thực phẩm tươi",
+      "disabled": true,
+      "createdAt": 1634144617000,
+      "id": 3
+    }
+  ],
   "profile": {
     "name": "typicode"
   },
@@ -187,5 +266,94 @@
       "id": 12
     }
   ],
-  "categorys": []
+  "order": [
+    {
+      "fullname": "Võ Văn Định",
+      "email": "vodinh2000ht@gmail.com",
+      "phone": "+84329766459",
+      "address": "Số 21, Ngách 101, Ngõ 80, Xuân Phương, Nam Từ Liêm",
+      "note": "ádasd",
+      "createdAt": 1634144617000,
+      "order_details": [
+        {
+          "id": "13303341114132444401432",
+          "name": "Trái cam mật",
+          "slug": "trai-cam-mat",
+          "price": 138000,
+          "discount": 13,
+          "category": 2,
+          "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp5.jpg?v=1625548796893",
+          "description": "Cam (danh pháp hai phần: Citrus × sinensis) là loài cây ăn quả cùng họ với bưởi. Nó có quả nhỏ hơn quả bưởi, vỏ mỏng, khi chín thường có màu da cam, có vị ngọt hoặc hơi chua. Loài cam là một cây lai được trồng từ xưa, có thể lai giống giữa loài bưởi (Citrus maxima) và quýt (Citrus reticulata). Đây là cây nhỏ, cao đến khoảng 10 m, có cành gai và lá thường xanh dài khoảng 4-10 cm. Cam bắt nguồn từ Đông Nam Á, có thể từ Ấn Độ, Việt Nam hay miền nam Trung Quốc ",
+          "createdAt": 1634003122000,
+          "updatedAt": 1634147376000,
+          "quantity": 2
+        },
+        {
+          "name": "Cá hồi new 123",
+          "slug": "ca-hoi-new-123",
+          "price": 200000,
+          "discount": 33,
+          "category": 3,
+          "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp10.jpg?v=1625546411053",
+          "description": "Tiết kiệm: 100.000₫ so với giá thị trường",
+          "createdAt": 1633406176000,
+          "id": "33110000203123114314341",
+          "updatedAt": 1634299769000,
+          "quantity": 4
+        }
+      ],
+      "id": "DH323549",
+      "status": 1
+    },
+    {
+      "id": "DH858710782",
+      "fullname": "Võ Văn Định",
+      "email": "vodinh2000ht@gmail.com",
+      "phone": "+84329766459",
+      "address": "Số 21, Ngách 101, Ngõ 80, Xuân Phương, Nam Từ Liêm",
+      "note": "ngon qua",
+      "status": 1,
+      "createdAt": 1634308756000,
+      "order_details": [
+        {
+          "id": "0212230222044142142400243",
+          "name": "Dâu tây",
+          "slug": "dau-tay",
+          "price": 138000,
+          "discount": 10,
+          "category": 2,
+          "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp3.jpg?v=1628523053697",
+          "description": "Dâu tây (danh pháp khoa học: Fragaria) hay còn gọi là dâu đất là một chi thực vật hạt kín và loài thực vật có hoa thuộc họ Hoa hồng (Rosaceae) cho quả được nhiều người ưa chuộng. Dâu tây xuất xứ từ châu Mỹ và được các nhà làm vườn châu Âu cho lai tạo vào thế kỷ 18 để tạo nên giống dâu tây được trồng rộng rãi hiện nay. Loài này được (Weston) Duchesne miêu tả khoa học đầu tiên năm 1788 \n\nDâu tây được trồng lấy trái ở vùng ôn đới. Với mùi thơm hấp dẫn cùng vị dâu ngọt lẫn chua nên dâu tây được ưa chuộng.\n\nỞ Việt Nam, khí hậu mát mẻ của miền núi Đà Lạt là môi trường thích hợp với việc canh tác dâu nên loại trái cây này được xem là đặc sản của vùng cao nguyên nơi đây.\n\nQuả dâu tây thường được sử dụng để làm các món tráng miệng. Dâu tây giàu vitamin C và là nguồn cung cấp dồi dào các chất flavonoit cần thiết c",
+          "createdAt": 1634003155000,
+          "updatedAt": 1634147384000,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "DH314736880",
+      "fullname": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "note": "",
+      "status": 1,
+      "createdAt": 1634309334000,
+      "order_details": [
+        {
+          "id": "0212230222044142142400243",
+          "name": "Dâu tây",
+          "slug": "dau-tay",
+          "price": 138000,
+          "discount": 10,
+          "category": 2,
+          "image": "https://bizweb.dktcdn.net/thumb/large/100/431/449/products/sp3.jpg?v=1628523053697",
+          "description": "Dâu tây (danh pháp khoa học: Fragaria) hay còn gọi là dâu đất là một chi thực vật hạt kín và loài thực vật có hoa thuộc họ Hoa hồng (Rosaceae) cho quả được nhiều người ưa chuộng. Dâu tây xuất xứ từ châu Mỹ và được các nhà làm vườn châu Âu cho lai tạo vào thế kỷ 18 để tạo nên giống dâu tây được trồng rộng rãi hiện nay. Loài này được (Weston) Duchesne miêu tả khoa học đầu tiên năm 1788 \n\nDâu tây được trồng lấy trái ở vùng ôn đới. Với mùi thơm hấp dẫn cùng vị dâu ngọt lẫn chua nên dâu tây được ưa chuộng.\n\nỞ Việt Nam, khí hậu mát mẻ của miền núi Đà Lạt là môi trường thích hợp với việc canh tác dâu nên loại trái cây này được xem là đặc sản của vùng cao nguyên nơi đây.\n\nQuả dâu tây thường được sử dụng để làm các món tráng miệng. Dâu tây giàu vitamin C và là nguồn cung cấp dồi dào các chất flavonoit cần thiết c",
+          "createdAt": 1634003155000,
+          "updatedAt": 1634147384000,
+          "quantity": 10
+        }
+      ]
+    }
+  ]
 }

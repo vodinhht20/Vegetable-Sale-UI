@@ -1,5 +1,6 @@
 async function main() {
     var mainCart = document.querySelector('#main-cart');
+    var bntOrderNow = document.querySelector('.bnt-order-now a');
     var arrCart = JSON.parse(localStorage.getItem("cart"));
     var totalPriceAll = 0;
     var result = arrCart.map(post => {
@@ -28,6 +29,7 @@ async function main() {
         changeQty();
     } else {
         mainCart.innerHTML = `<tr><td colspan="6" class="text-center text-danger"><b>Giỏ hàng trống!</b></td></tr>`;
+        bntOrderNow.classList.add('disabled');
     }
     
 

@@ -101,8 +101,8 @@ ulitiFunction('','');
         })
    }
 
-function pageFunc(pageNumber) {
-    if (pageNumber==1) {
+function pageFunc(pageNumber,countPageItem) {
+    if (pageNumber==1) { // disabled bnt befor khi page bằng 1
         qSelectAll('.page-item')[0].classList.add('disabled');
     }
         qSelectAll('.page-item').forEach(element => {
@@ -111,29 +111,55 @@ function pageFunc(pageNumber) {
         qSelectAll('.page-item')[pageNumber].classList.add('active');
         qSelect('#pageBefor').href = `?page=${parseInt(pageNumber)-1}`;
         qSelect('#pageNext').href = `?page=${parseInt(pageNumber)+1}`;
-
+    if (parseInt(countPageItem)+1 ==pageNumber) {
+        qSelect('.page-next').classList.add('disabled');
+    }
 }
-page ? pageFunc(page): pageFunc(1);
+
+async function pageItem() {
+    var countPageItem = 0;
+    await axios.get('http://localhost:3000/products')
+            .then((response) => response.data)
+            .then (data => {
+                var result = '';
+                countPageItem = Math.floor(data.length/8);
+                for (let i = 1; i <countPageItem+2; i++) {
+                    result+=    `<li class="page-item number-page"><a class="page-link" href="?page=${i}">${i}</a></li>`
+                }
+                resultTotal = `<li class="page-item">
+                                    <a class="page-link" id="pageBefor" href="" tabindex="">Trước</a>
+                                </li>`
+                                +result+
+                                `<li class="page-item page-next">
+                                    <a class="page-link" id="pageNext" href="#">Tiếp</a>
+                                </li>`;
+                qSelect('#page-item').innerHTML = resultTotal;
+            })
+    await page ? pageFunc(page,countPageItem): pageFunc(1,countPageItem);
+}
+
+pageItem();
+
 
 
 // tìm kiếm 
-qSelect('#inpKeySearch').addEventListener('input', function (e) {
-    var resultSearch = qSelect('.result-search');
-    if (qSelect('#inpKeySearch').value.trim() != '') {
-        axios.get('http://localhost:3000/products?q='+ qSelect('#inpKeySearch').value)
-            .then(response => {
-                const result = response.data.map((post,index) => {
-                    count = index;
-                    return showDataChildren(post.image,post.name,post.price,post.slug);
-                    }).join("");
-                        qSelect('.result-search').style.display = 'block';
-                        resultSearch.innerHTML = result;
-            })
-    } else {
-        qSelect('.result-search').style.display = 'none';
-    }
+// qSelect('#inpKeySearch').addEventListener('input', function (e) {
+//     var resultSearch = qSelect('.result-search');
+//     if (qSelect('#inpKeySearch').value.trim() != '') {
+//         axios.get('http://localhost:3000/products?q='+ qSelect('#inpKeySearch').value)
+//             .then(response => {
+//                 const result = response.data.map((post,index) => {
+//                     count = index;
+//                     return showDataChildren(post.image,post.name,post.price,post.slug);
+//                     }).join("");
+//                         qSelect('.result-search').style.display = 'block';
+//                         resultSearch.innerHTML = result;
+//             })
+//     } else {
+//         qSelect('.result-search').style.display = 'none';
+//     }
         
-});
+// });
 
 function showDataChildren(image,name,price,slug) {
     return `
@@ -148,4 +174,20 @@ function showDataChildren(image,name,price,slug) {
         </div>`;
 }
 
-
+qSelect('#inpKeySearch').addEventListener('input', _.debounce(function (e) {
+    var resultSearch = qSelect('.result-search');
+    if (qSelect('#inpKeySearch').value.trim() != '') {
+        axios.get('http://localhost:3000/products?q='+ `${qSelect('#inpKeySearch').value}`)
+            .then(response => {
+                const result = response.data.map((post,index) => {
+                    count = index;
+                    return showDataChildren(post.image,post.name,post.price,post.slug);
+                    }).join("");
+                    qSelect('.result-search').style.display = 'block';
+                        resultSearch.innerHTML = result;
+            })
+    } else {
+        qSelect('.result-search').style.display = 'none';
+    }
+        
+},800));

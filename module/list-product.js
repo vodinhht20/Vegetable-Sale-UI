@@ -15,6 +15,9 @@ axios.get(`http://localhost:3000/products?_page=${page}&_limit=5`)
         listData.innerHTML = result;
     })
     .then(() => {
+        formatCategory();
+    })
+    .then(() => {
         qSelectAll('.bnt-confirm-delete').forEach(element => {
             element.addEventListener('click', function() {
                 qSelect('#bnt-confirm-delete').value = element.value;
@@ -84,14 +87,6 @@ qSelect('#select_sort').addEventListener('change', function() {
     })
 })
 
-
-
-
-
-
-
-
-
     function formatCash(str) {
         return str.split('').reverse().reduce((prev, next, index) => {
             return ((index % 3) ? next : (next + ',')) + prev
@@ -99,31 +94,64 @@ qSelect('#select_sort').addEventListener('change', function() {
    }
     
     function showData(index,name,price,image,description,id,category) {
-        var formatCategory = category==1 ? 'Rau củ quả' : category==2 ? 'Trái Cây' : 'Thực phẩm tươi';
         return `<tr>
                         <th scope="row">${index+1}</th>
                         <td>${name}</td>
                         <td>${formatCash(`${price}`)} đ</td>
-                        <td class="description">${formatCategory}</td>
+                        <td class="category_name">${category}</td>
                         <td><img src="${image}" width="100" alt=""></td>
                         <td class="description">${description}</td>
                         <td><button value="${id}" data-toggle="modal" data-target="#exampleModal" class="btn btn-danger bnt-confirm-delete">Xóa</button></td>
                         <td><a href="update-product.html?id=${id}" class="btn btn-success">Sửa</a></td>
                     </tr>`;
     }
-    //  phân trang 
     
-function pageFunc(pageNumber) {
-    if (pageNumber==1) {
-        qSelectAll('.page-item')[0].classList.add('disabled');
+    function formatCategory() {
+        var categoryName = document.querySelectorAll('.category_name');
+        categoryName.forEach(item => {
+            axios.get('http://localhost:3000/categories/'+item.innerHTML)
+            .then(response => response.data)
+            .then(data => {
+                item.innerHTML = data.name;
+            });
+        })
     }
-        qSelectAll('.page-item').forEach(element => {
-        element.classList.remove('active');
-    });
-        qSelectAll('.page-item')[pageNumber].classList.add('active');
-        qSelect('#pageBefor').href = `?page=${parseInt(pageNumber)-1}`;
-        qSelect('#pageNext').href = `?page=${parseInt(pageNumber)+1}`;
+    function pageFunc(pageNumber,countPageItem) {
+        if (pageNumber==1) { // disabled bnt befor khi page bằng 1
+            qSelectAll('.page-item')[0].classList.add('disabled');
+        }
+            qSelectAll('.page-item').forEach(element => {
+            element.classList.remove('active');
+        });
+            qSelectAll('.page-item')[pageNumber].classList.add('active');
+            qSelect('#pageBefor').href = `?page=${parseInt(pageNumber)-1}`;
+            qSelect('#pageNext').href = `?page=${parseInt(pageNumber)+1}`;
+        if (parseInt(countPageItem)+1 ==pageNumber) {
+            qSelect('.page-next').classList.add('disabled');
+        }
+    }
 
-}
-page ? pageFunc(page): pageFunc(1);
+    async function pageItem() {
+        var countPageItem = 0;
+        await axios.get('http://localhost:3000/products')
+                .then((response) => response.data)
+                .then (data => {
+                    var result = '';
+                    countPageItem = Math.floor(data.length/5);
+                    for (let i = 1; i <countPageItem+2; i++) {
+                        result+=    `<li class="page-item number-page"><a class="page-link" href="?page=${i}">${i}</a></li>`
+                    }
+                    resultTotal = `<li class="page-item">
+                                        <a class="page-link" id="pageBefor" href="" tabindex="">Trước</a>
+                                    </li>`
+                                    +result+
+                                    `<li class="page-item page-next">
+                                        <a class="page-link" id="pageNext" href="#">Tiếp</a>
+                                    </li>`;
+                    qSelect('#page-item').innerHTML = resultTotal;
+                })
+        await page ? pageFunc(page,countPageItem): pageFunc(1,countPageItem);
+    }
+
+    pageItem();
 

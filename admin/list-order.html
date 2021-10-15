@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Trang quản trị</title>
+    <title>Đơn hàng</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
     <meta content="Coderthemes" name="author">
@@ -19,13 +19,15 @@
     <link href="assets\css\icons.min.css" rel="stylesheet" type="text/css">
     <link href="assets\css\app.min.css" rel="stylesheet" type="text/css">
 
+    <!-- boostap toggle -->
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
 </head>
 
 <body>
 
     <!-- Begin page -->
     <div id="wrapper">
-
         <!-- Topbar Start -->
         <div class="navbar-custom">
             <ul class="list-unstyled topnav-menu float-right mb-0">
@@ -34,7 +36,7 @@
                     <form class="app-search">
                         <div class="app-search-box">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search...">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm ...">
                                 <div class="input-group-append">
                                     <button class="btn" type="submit">
                                         <i class="fe-search"></i>
@@ -44,7 +46,6 @@
                         </div>
                     </form>
                 </li>
-
                 <li class="dropdown notification-list">
                     <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown"
                         href="#" role="button" aria-haspopup="false" aria-expanded="false">
@@ -57,26 +58,25 @@
                         <!-- item-->
                         <div class="dropdown-item noti-title">
                             <h5 class="m-0 text-white">
-                                Welcome !
+                                Xin chào !
                             </h5>
                         </div>
-
                         <!-- item-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item">
                             <i class="fe-user"></i>
-                            <span>My Account</span>
+                            <span>Tài khoản của tôi</span>
                         </a>
 
                         <!-- item-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item">
                             <i class="fe-settings"></i>
-                            <span>Settings</span>
+                            <span>Cài đặt</span>
                         </a>
 
                         <!-- item-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item">
                             <i class="fe-lock"></i>
-                            <span>Lock Screen</span>
+                            <span>Bảo mật</span>
                         </a>
 
                         <div class="dropdown-divider"></div>
@@ -84,7 +84,7 @@
                         <!-- item-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item">
                             <i class="fe-log-out"></i>
-                            <span>Logout</span>
+                            <span>Đăng xuất</span>
                         </a>
 
                     </div>
@@ -210,67 +210,50 @@
                             <div class="page-title-box">
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Upvex</a></li>
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboards</a></li>
-                                        <li class="breadcrumb-item active">Dashboard</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Quản trị</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Sản phẩm</a></li>
+                                        <li class="breadcrumb-item active">Danh sách</li>
                                     </ol>
                                 </div>
-                                <h4 class="page-title">Dashboard</h4>
+                                <h4 class="page-title text-secondary">Quản Trị</h4>
                             </div>
                         </div>
                     </div>
                     <!-- end page title -->
                     <!-- nội dung -->
-                    <div class="title-admin-sub">
-                        <h2 class="text-primary">Sửa sản phẩm</h2>
+                    <div class="box-content">
+                        <div class="title-admin-sub">
+                            <h2 class="text-primary">Đơn hàng</h2>
+                        </div>
+                        <div class="order__content-list">
+                            
+                        </div>
                     </div>
-                    <div class="box-form-create">
-                        <form action="" class="" id="form-update">
-                            <div class="form-group">
-                                <label for="nameProduct">Tên sản phẩm:</label>
-                                <input type="text" class="form-control" id="nameProduct"  placeholder="Tên sản phẩm . . ." required>
-                                <div class="invalid-feedback">Không được để trống!</div>
-                            </div>
-                            <div class="form-group">
-                                <label for="priceProduct">Đơn giá: </label>
-                                <input type="number" class="form-control" id="priceProduct"  placeholder="Giá sản phẩm . . ." required>
-                                <div class="invalid-feedback">Không được để trống!</div>
-                            </div>
-                            <div class="form-group">
-                                <label for="saleProduct">Giảm giá (đơn vị %): </label>
-                                <input type="number" class="form-control" id="saleProduct"  placeholder="Đơn vị giảm % " required>
-                                <div class="invalid-feedback">Không được để trống!</div>
-                            </div>
-                            <div class="form-group">
-                                <label for="categoryProduct">Loại sản phẩm:</label>
-                                <select class="form-control" id="categoryProduct" required>
-                                    <option value=''>-- Chọn loại SP --</option>
-                                    <option value='1'>Rau củ quả</option>
-                                    <option value='2'>Trái Cây</option>
-                                    <option value='3'>Thực phẩm tươi</option>
-                                </select>
-                                <div class="invalid-feedback">Không được để trống!</div>
-                            </div>
-                            <div class="form-group" >
-                                <label for="nameImage">Link ảnh:</label>
-                                <input type="text" class="form-control" id="nameImage"  placeholder="Link ảnh . . ." required>
-                                <div class="invalid-feedback">Không được để trống!</div>
-                               
-                            </div>
-                            <div class="form-group">
-                                <label for="informationProduct">Mô tả sản phẩm</label>
-                                <textarea type="text" class="form-control" id="informationProduct"  placeholder="Tên sản phẩm . . ."></textarea>
-                            </div>
-                            <div class="form-group text-center">
-                                <button type="submit" class="btn btn-primary ">Cập Nhật</button>
-                                <a type="submit" href="index.html" class="btn btn-primary">Xem danh sách</a>
-                            </div>
-                        </form>
-                    </div>
+                    <!-- end row -->
                 </div> <!-- container -->
 
             </div> <!-- content -->
-
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog " role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-white">Bạn có muốn hủy đơn hàng này không</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="bnt-confirm-delete" value="" class="btn btn-danger">Xác nhận</button>
+                            <button type="button" class="btn btn-info" data-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Footer Start -->
             <footer class="footer">
                 <div class="container-fluid">
@@ -282,7 +265,6 @@
                 </div>
             </footer>
             <!-- end Footer -->
-
         </div>
 
         <!-- ============================================================== -->
@@ -411,9 +393,13 @@
     <!-- App js -->
     <script src="assets\js\app.min.js"></script>
 
+    <!-- toggle -->
+    <!-- <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script> -->
+
     <!-- js main -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="../module/update-product.js"></script>
+    <script src="../module/list-order.js"></script>
+    <script src=""></script>
 
 </body>
 
