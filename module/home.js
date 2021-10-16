@@ -1,51 +1,44 @@
 var qSelect = document.querySelector.bind(document);
+async function main() {
+    await axios.get('https://x4vxf.sse.codesandbox.io/products')
+        .then((response) => response.data)
+        .then(data => {
+            var result = data.map(post => {
+                return showProducts(post.image,post.price,post.discount,post.name,post.slug);
+            }).join("");
+            qSelect('#product-hot').innerHTML = result;
+            qSelect('.cartegory-slide-show-home .owl-carousel').innerHTML = showCategory();
+        });
+    await axios.get('https://x4vxf.sse.codesandbox.io/products?category=2')
+            .then((response) => response.data)
+            .then(data => {
+                var result = data.map(post => {
+                    return showProducts(post.image,post.price,post.discount,post.name,post.slug);
+                }).join("");
+                qSelect('#product-fruits').innerHTML = result;
+            });
+    await axios.get('https://x4vxf.sse.codesandbox.io/products?category=1')
+            .then((response) => response.data)
+            .then(data => {
+                var result = data.map(post => {
+                    return showProducts(post.image,post.price,post.discount,post.name,post.slug);
+                }).join("");
+                qSelect('#product-vegetable').innerHTML = result;
+            });
+    await axios.get('https://x4vxf.sse.codesandbox.io/products?category=3')
+            .then((response) => response.data)
+            .then(data => {
+                var result = data.map(post => {
+                    return showProducts(post.image,post.price,post.discount,post.name,post.slug);
+                }).join("");
+                qSelect('#product-liveFood').innerHTML = result;
+            });
+    await  carouselControlAll();
 
-axios.get('https://x4vxf.sse.codesandbox.io/products')
-    .then((response) => response.data)
-    .then(data => {
-        var result = data.map(post => {
-            return showProducts(post.image,post.price,post.discount,post.name,post.slug);
-        }).join("");
-        qSelect('#product-hot').innerHTML = result;
-        qSelect('.cartegory-slide-show-home .owl-carousel').innerHTML = showCategory();
-    })
-    .then(() => {
-         // các sản phẩm trái cây
-         axios.get('https://x4vxf.sse.codesandbox.io/products?category=2')
-         .then((response) => response.data)
-         .then(data => {
-             var result = data.map(post => {
-                 return showProducts(post.image,post.price,post.discount,post.name,post.slug);
-             }).join("");
-             qSelect('#product-fruits').innerHTML = result;
-         })
-    })
-    .then(() => {
-        // các sản phẩm Rau củ quả
-        axios.get('https://x4vxf.sse.codesandbox.io/products?category=1')
-        .then((response) => response.data)
-        .then(data => {
-            var result = data.map(post => {
-                return showProducts(post.image,post.price,post.discount,post.name,post.slug);
-            }).join("");
-            qSelect('#product-vegetable').innerHTML = result;
-        })
-   })
-   .then(() => {
-        // các sản phẩm loại thực phaamt tươi
-        axios.get('https://x4vxf.sse.codesandbox.io/products?category=3')
-        .then((response) => response.data)
-        .then(data => {
-            var result = data.map(post => {
-                return showProducts(post.image,post.price,post.discount,post.name,post.slug);
-            }).join("");
-            qSelect('#product-liveFood').innerHTML = result;
-        })
-        .then(() => {
-        carouselControlAll();
-    })
-})
+        
+}
     
+main();
 //     điều khiển carousel 
 function carouselControlAll() {
     // carousel  box-product-hot
