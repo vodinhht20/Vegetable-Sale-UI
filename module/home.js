@@ -33,7 +33,9 @@ async function main() {
                 }).join("");
                 qSelect('#product-liveFood').innerHTML = result;
             });
-    await  carouselControlAll();
+    await setTimeout(e => {
+        carouselControlAll();
+    },100)
 
         
 }
