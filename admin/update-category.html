@@ -19,15 +19,13 @@
     <link href="assets\css\icons.min.css" rel="stylesheet" type="text/css">
     <link href="assets\css\app.min.css" rel="stylesheet" type="text/css">
 
-    <!-- boostap toggle -->
-    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-
 </head>
 
 <body>
 
     <!-- Begin page -->
     <div id="wrapper">
+
         <!-- Topbar Start -->
         <div class="navbar-custom">
             <ul class="list-unstyled topnav-menu float-right mb-0">
@@ -36,7 +34,7 @@
                     <form class="app-search">
                         <div class="app-search-box">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Tìm kiếm ...">
+                                <input type="text" class="form-control" placeholder="Search...">
                                 <div class="input-group-append">
                                     <button class="btn" type="submit">
                                         <i class="fe-search"></i>
@@ -46,6 +44,7 @@
                         </div>
                     </form>
                 </li>
+
                 <li class="dropdown notification-list">
                     <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown"
                         href="#" role="button" aria-haspopup="false" aria-expanded="false">
@@ -58,25 +57,26 @@
                         <!-- item-->
                         <div class="dropdown-item noti-title">
                             <h5 class="m-0 text-white">
-                                Xin chào !
+                                Welcome !
                             </h5>
                         </div>
+
                         <!-- item-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item">
                             <i class="fe-user"></i>
-                            <span>Tài khoản của tôi</span>
+                            <span>My Account</span>
                         </a>
 
                         <!-- item-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item">
                             <i class="fe-settings"></i>
-                            <span>Cài đặt</span>
+                            <span>Settings</span>
                         </a>
 
                         <!-- item-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item">
                             <i class="fe-lock"></i>
-                            <span>Bảo mật</span>
+                            <span>Lock Screen</span>
                         </a>
 
                         <div class="dropdown-divider"></div>
@@ -84,7 +84,7 @@
                         <!-- item-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item">
                             <i class="fe-log-out"></i>
-                            <span>Đăng xuất</span>
+                            <span>Logout</span>
                         </a>
 
                     </div>
@@ -158,7 +158,7 @@
                                 <li>
                                     <a href="./list-category.html">Loại sản phẩm</a>
                                 </li>
-                               
+                                
                             </ul>
                         </li>
 
@@ -210,61 +210,37 @@
                             <div class="page-title-box">
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Quản trị</a></li>
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Sản phẩm</a></li>
-                                        <li class="breadcrumb-item active">Danh sách</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Upvex</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboards</a></li>
+                                        <li class="breadcrumb-item active">Dashboard</li>
                                     </ol>
                                 </div>
-                                <h4 class="page-title text-secondary">Quản Trị</h4>
+                                <h4 class="page-title">Dashboard</h4>
                             </div>
                         </div>
                     </div>
                     <!-- end page title -->
                     <!-- nội dung -->
-                    <div class="box-content w-50 m-auto">
-                        <div class="title-admin-sub">
-                            <h2 class="text-primary">Loại sản phẩm</h2>
-                        </div>
-                        <div class="title-admin-sub mt-2 mb-2 d-flex justify-content-between align-items-center">
-                            <a class="btn btn-primary" href="./create-category.html">Thêm loại sản phẩm</a>
-                        </div>
-                        <table class="table" style="color: #020202;">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th scope="col">STT</th>
-                                    <th scope="col">Loại sản phẩm</th>
-                                    <th scope="col" colspan="2">Chức năng</th>
-                                </tr>
-                            </thead>
-                            <tbody id="content">
-                               
-                            </tbody>
-                        </table>
+                    <div class="title-admin-sub">
+                        <h2 class="text-primary">Sửa loại sản phẩm</h2>
                     </div>
-                    <!-- end row -->
+                    <div class="box-form-create">
+                        <form action="" method="post" class="" id="form-add">
+                            <div class="form-group">
+                                <label for="nameProduct">Loại sản phẩm:</label>
+                                <input type="text" class="form-control" id="nameCategory"  placeholder="Tên loại sản phẩm . . ." required>
+                                <div class="invalid-feedback">Không được để trống!</div>
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-primary ">Cập nhật</button>
+                                <a type="submit" href="./list-category.html" class="btn btn-primary">Xem danh sách</a>
+                            </div>
+                        </form>
+                    </div>
                 </div> <!-- container -->
 
             </div> <!-- content -->
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog " role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        </div>
-                        <div class="modal-body">
-                            <p class="text-white">Bạn có muốn xóa sản phẩm này không. Hành động này không thể khôi phục !</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" id="bnt-confirm-delete" value="" class="btn btn-danger">Xác nhận</button>
-                            <button type="button" class="btn btn-info" data-dismiss="modal">Đóng</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <!-- Footer Start -->
             <footer class="footer">
                 <div class="container-fluid">
@@ -276,6 +252,7 @@
                 </div>
             </footer>
             <!-- end Footer -->
+
         </div>
 
         <!-- ============================================================== -->
@@ -404,14 +381,9 @@
     <!-- App js -->
     <script src="assets\js\app.min.js"></script>
 
-    <!-- toggle -->
-    <!-- <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script> -->
-
     <!-- js main -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="../module/list-category.js"></script>
-    <script src=""></script>
-
+    <script src="../module/update-category.js"></script>
 </body>
 
 </html>

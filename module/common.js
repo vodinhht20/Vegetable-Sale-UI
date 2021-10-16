@@ -4,7 +4,7 @@ function showNumberCart() {
     var user = localStorage.getItem('user');
     if (user) {
         account.innerHTML = `<li><a href="./admin/index.html">Quản trị</a></li>
-                            <li><a href="./login.html">Đăng xuất</a></li>`
+                            <li><a href="./logout.html">Đăng xuất</a></li>`
     }
 }
 showNumberCart();

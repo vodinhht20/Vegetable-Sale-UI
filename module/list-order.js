@@ -61,7 +61,7 @@ function showData(productsList,id,createdAt,totalPrice) {
                 <div class="form__group-function">
                     <button name="bntUpdateStatus" value="${id}" class="bnt__update">Thành Công</button>
                 </div>
-                <a href="./order_detail.php?idDH=${id}" id="linkOrderDetai"><i
+                <a href="./order_detail.html?idDH=${id}" id="linkOrderDetai"><i
                         class="fas fa-angle-double-right"></i> Xem Chi Tiết</a>
             </form>
         </div>

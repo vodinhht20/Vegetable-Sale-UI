@@ -6,7 +6,10 @@ function showData(index,name,id,status) {
         <tr>
             <td>${index+1}</td>
             <td>${name}</td>
-            <td class="bnt-status"><input class="statusChecked" type="checkbox"value="${id}" ${status} data-toggle="toggle"></td>
+            <td class="bnt-status">
+                <input class="statusChecked" type="checkbox"value="${id}" ${status} data-toggle="toggle">
+            </td>
+            <td><a href="update-category.html?id=${id}" class="btn btn-success">Sửa</a></td>
         </tr>`;
 }
 async function main() {

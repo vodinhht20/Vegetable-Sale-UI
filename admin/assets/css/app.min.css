@@ -10,6 +10,9 @@ body {
 }
 
 /* order */
+#order-detail-sub p {
+  font-size: 15px;
+}
 .order-empty p{
   text-align: center;
   padding: 10px 0;
