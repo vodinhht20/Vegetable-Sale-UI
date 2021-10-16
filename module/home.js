@@ -34,17 +34,17 @@ async function main() {
                 qSelect('#product-liveFood').innerHTML = result;
             });
     await setTimeout(e => {
-        carouselControlAll();
-    },100)
+            carouselControlAll();
+        },100);
 
         
 }
     
 main();
 //     điều khiển carousel 
-function carouselControlAll() {
+async function carouselControlAll() {
     // carousel  box-product-hot
-    $("#product-hot").owlCarousel({
+    await $("#product-hot").owlCarousel({
         loop: false,
         margin: 20,
         nav: true,
@@ -71,7 +71,7 @@ function carouselControlAll() {
     });
 
     // carousel  product-show-main
-    $(".product-show-main .owl-carousel").owlCarousel({
+    await $(".product-show-main .owl-carousel").owlCarousel({
         loop: false,
         margin: 20,
         nav: true,
@@ -94,7 +94,7 @@ function carouselControlAll() {
         },
     });
     // carousel  all
-    $(".owl-carousel").owlCarousel({
+    await $(".owl-carousel").owlCarousel({
         loop: false,
         margin: 0,
         nav: true,
