@@ -28,9 +28,8 @@ async function main() {
             axios.post('https://x4vxf.sse.codesandbox.io/order',dataPost)
                 .then(() => {
                     localStorage.removeItem('cart');
-                    alert('Bạn đã đặt hàng thành công');
+                    window.location = './index.html';
                 })
-                .then(() => window.location = './index.html')
                     
         } else {
             toast('toast__error','fas fa-exclamation-circle','Thiếu thông tin','Bạn vui lòng nhập đủ thông tin người nhận trước khi đặt hàng !!!');
