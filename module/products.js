@@ -7,7 +7,7 @@ const urlParams = new URLSearchParams(url);
 var page = urlParams.get('page');
 var countPage,countProduct = 0;
 var querySort,queryFilter = '';
-var baseApi = `http://localhost:3000/products?_page=${page}&_limit=8`;
+var baseApi = `https://x4vxf.sse.codesandbox.io/products?_page=${page}&_limit=8`;
 ulitiFunction('','');
 
     // sắp xếp
@@ -118,7 +118,7 @@ function pageFunc(pageNumber,countPageItem) {
 
 async function pageItem() {
     var countPageItem = 0;
-    await axios.get('http://localhost:3000/products')
+    await axios.get('https://x4vxf.sse.codesandbox.io/products')
             .then((response) => response.data)
             .then (data => {
                 var result = '';
@@ -146,7 +146,7 @@ pageItem();
 // qSelect('#inpKeySearch').addEventListener('input', function (e) {
 //     var resultSearch = qSelect('.result-search');
 //     if (qSelect('#inpKeySearch').value.trim() != '') {
-//         axios.get('http://localhost:3000/products?q='+ qSelect('#inpKeySearch').value)
+//         axios.get('https://x4vxf.sse.codesandbox.io/products?q='+ qSelect('#inpKeySearch').value)
 //             .then(response => {
 //                 const result = response.data.map((post,index) => {
 //                     count = index;
@@ -177,7 +177,7 @@ function showDataChildren(image,name,price,slug) {
 qSelect('#inpKeySearch').addEventListener('input', _.debounce(function (e) {
     var resultSearch = qSelect('.result-search');
     if (qSelect('#inpKeySearch').value.trim() != '') {
-        axios.get('http://localhost:3000/products?q='+ `${qSelect('#inpKeySearch').value}`)
+        axios.get('https://x4vxf.sse.codesandbox.io/products?q='+ `${qSelect('#inpKeySearch').value}`)
             .then(response => {
                 const result = response.data.map((post,index) => {
                     count = index;

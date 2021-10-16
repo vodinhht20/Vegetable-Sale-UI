@@ -5,8 +5,8 @@ const qSelectAll = document.querySelectorAll.bind(document);
 var url = window.location.search;
 const urlParams = new URLSearchParams(url);
 var page = urlParams.get('page');
-
-axios.get(`http://localhost:3000/products?_page=${page}&_limit=5`)
+function main() {
+    axios.get(`https://x4vxf.sse.codesandbox.io/products?_page=${page}&_limit=5`)
     .then(response => {
         var listData = document.querySelector('#content');
         const result = response.data.map((post,index) => {
@@ -26,11 +26,12 @@ axios.get(`http://localhost:3000/products?_page=${page}&_limit=5`)
     })
     .then(() => {
         qSelect('#bnt-confirm-delete').addEventListener('click', function(e) {
-            axios.delete('http://localhost:3000/products/' + this.value)
+            axios.delete('https://x4vxf.sse.codesandbox.io/products/' + this.value)
         })
 
     })
-
+}
+main();
 
 // sort price and discount
 // sắp xếp
@@ -64,7 +65,7 @@ qSelect('#select_sort').addEventListener('change', function() {
         iconSort.classList.remove('fa-sort','fa-sort-amount-down','fa-sort-amount-up','fa-sort-alpha-up');
         iconSort.classList.add('fa-sort-alpha-down-alt');
     }
-    axios.get(`http://localhost:3000/products?_page=${page}&_limit=5&${condition}`)
+    axios.get(`https://x4vxf.sse.codesandbox.io/products?_page=${page}&_limit=5&${condition}`)
     .then(response => {
         var listData = document.querySelector('#content');
         const result = response.data.map((post,index) => {
@@ -81,7 +82,8 @@ qSelect('#select_sort').addEventListener('change', function() {
     })
     .then(() => {
         qSelect('#bnt-confirm-delete').addEventListener('click', function(e) {
-            axios.delete('http://localhost:3000/products/' + this.value)
+            axios.delete('https://x4vxf.sse.codesandbox.io/products/' + this.value)
+                .then(window.location = "./index.html");
         })
 
     })
@@ -109,7 +111,7 @@ qSelect('#select_sort').addEventListener('change', function() {
     function formatCategory() {
         var categoryName = document.querySelectorAll('.category_name');
         categoryName.forEach(item => {
-            axios.get('http://localhost:3000/categories/'+item.innerHTML)
+            axios.get('https://x4vxf.sse.codesandbox.io/categories/'+item.innerHTML)
             .then(response => response.data)
             .then(data => {
                 item.innerHTML = data.name;
@@ -133,7 +135,7 @@ qSelect('#select_sort').addEventListener('change', function() {
 
     async function pageItem() {
         var countPageItem = 0;
-        await axios.get('http://localhost:3000/products')
+        await axios.get('https://x4vxf.sse.codesandbox.io/products')
                 .then((response) => response.data)
                 .then (data => {
                     var result = '';

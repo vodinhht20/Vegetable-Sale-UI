@@ -1,7 +1,7 @@
 
 async function main() {
     var mainOrder = document.querySelector('.box-content .order__content-list');
-    await axios.get('http://localhost:3000/order')
+    await axios.get('https://x4vxf.sse.codesandbox.io/order')
         .then((response) => response.data)
         .then(data => {
                 var listOrder = data.map(order => {
@@ -79,7 +79,7 @@ function remoteOrder() {
             });
         });
         bntConfirm.addEventListener('click', e => {
-            axios.delete('http://localhost:3000/order/' + bntConfirm.value)
+            axios.delete('https://x4vxf.sse.codesandbox.io/order/' + bntConfirm.value)
         });
 }
 
@@ -88,7 +88,7 @@ function finishOrder() {
     var bntCancelOrder = document.querySelectorAll('.bnt__update');
     bntCancelOrder.forEach(element => {
         element.addEventListener('click', e => {
-            axios.patch('http://localhost:3000/order/' + element.value,{status: 1})
+            axios.patch('https://x4vxf.sse.codesandbox.io/order/' + element.value,{status: 1})
         })
     });
 }

@@ -9,7 +9,7 @@ const formSignin = document.querySelector('#form-signin');
             lastname: $('#lastName').value,
             phone: $('#phoneNumber').value
         };
-        axios.post('http://localhost:3000/signup/', user)
+        axios.post('https://x4vxf.sse.codesandbox.io/signup/', user)
             .then(respose => {
                 console.log(respose.data);
                 localStorage.setItem('user', JSON.stringify(respose.data));

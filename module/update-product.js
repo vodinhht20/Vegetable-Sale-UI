@@ -5,7 +5,7 @@
         const listCategory = document.querySelector('#categoryProduct');
 
         async function main() {
-            await axios.get('http://localhost:3000/categories')
+            await axios.get('https://x4vxf.sse.codesandbox.io/categories')
                     .then((response) => response.data)
                     .then(data => {
                         var result = data.map((post) => {
@@ -16,7 +16,7 @@
                         listCategory.innerHTML = `<option value=''>-- Chọn loại SP --</option>`+result;
                     });
 
-            await axios.get('http://localhost:3000/products/'+id)
+            await axios.get('https://x4vxf.sse.codesandbox.io/products/'+id)
                     .then(response => response.data)
                     .then(data => {
                         {
@@ -41,7 +41,7 @@
                     updatedAt: Date.parse(new Date),
                 }
                 console.log(dataPost);
-                axios.patch('http://localhost:3000/products/'+id, dataPost)
+                axios.patch('https://x4vxf.sse.codesandbox.io/products/'+id, dataPost)
                     .then(response => console.log(response))
                     .then(() => window.location = "./index.html")
             });

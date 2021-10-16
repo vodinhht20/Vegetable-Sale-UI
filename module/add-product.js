@@ -1,7 +1,7 @@
 const formAdd = document.querySelector('#form-add');
 const listCategory = document.querySelector('#categoryProduct');
         async function main() {
-            await axios.get('http://localhost:3000/categories')
+            await axios.get('https://x4vxf.sse.codesandbox.io/categories')
                 .then((response) => response.data)
                 .then(data => {
                     var result = data.map((post) => {
@@ -26,9 +26,10 @@ const listCategory = document.querySelector('#categoryProduct');
                         createdAt: Date.parse(new Date),
                     }
                     console.log(dataPost);
-                    axios.post('http://localhost:3000/products', dataPost)
+                    axios.post('https://x4vxf.sse.codesandbox.io/products', dataPost)
                         .then(response => console.log(response))
                         .then(() => alert("Bạn đã thêm thành công"))
+                        .then(window.location = "./index.html");
         
                         
                 });

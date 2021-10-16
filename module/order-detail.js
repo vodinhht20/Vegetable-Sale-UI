@@ -4,7 +4,7 @@ async function main() {
     var url = window.location.search;
     const urlParams = new URLSearchParams(url);
     var id = urlParams.get('idDH');
-    await axios.get('http://localhost:3000/order/'+id)
+    await axios.get('https://x4vxf.sse.codesandbox.io/order/'+id)
         .then((response) => response.data)
         .then(data => {
                         var totalPrice = 0;

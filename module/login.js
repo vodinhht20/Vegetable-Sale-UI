@@ -6,7 +6,7 @@ formLogin.addEventListener('submit', function (e) {
             email: document.querySelector('#accEmail').value,
             password: document.querySelector('#accPassword').value
         };
-        axios.post('http://localhost:3000/login', user)
+        axios.post('https://x4vxf.sse.codesandbox.io/login', user)
             .then(respose => {
                 localStorage.setItem('user', JSON.stringify(respose.data));
                 alert('Đăng nhập thành công');

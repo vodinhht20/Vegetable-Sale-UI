@@ -5,7 +5,7 @@ var url = window.location.search;
 const urlParams = new URLSearchParams(url);
 var slug = urlParams.get('slug');
 async function main() {
-    await axios.get('http://localhost:3000/products?slug='+slug)
+    await axios.get('https://x4vxf.sse.codesandbox.io/products?slug='+slug)
             .then(response => response.data)
             .then(data =>  {
                     var result = data.map(post => {
@@ -63,7 +63,7 @@ async function main() {
     await qSelect('.bnt-add-cart').addEventListener('click', function(e) {
         var id = this.value;
         var qty = qSelect('#qty').value;
-        axios.get('http://localhost:3000/products/'+id)
+        axios.get('https://x4vxf.sse.codesandbox.io/products/'+id)
             .then(response => {
                 const newProduct = {
                     ...response.data,
@@ -93,7 +93,7 @@ async function main() {
     await qSelect('.bnt-buy-now').addEventListener('click',function(e) {
         var id = this.value;
         var qty = qSelect('#qty').value;
-        axios.get('http://localhost:3000/products/'+id)
+        axios.get('https://x4vxf.sse.codesandbox.io/products/'+id)
             .then(response => {
                 const newProduct = {
                     ...response.data,

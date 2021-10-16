@@ -7,9 +7,11 @@ const formAdd = document.querySelector('#form-add');
                 createdAt: Date.parse(new Date),
             }
             console.log(dataPost);
-            axios.post('http://localhost:3000/categories', dataPost)
+            axios.post('https://x4vxf.sse.codesandbox.io/categories', dataPost)
                 .then(response => console.log(response))
                 .then(() => alert("Bạn đã thêm thành công"))
+                .then(window.location = "./list-category.html");
+
 
                 
         })

@@ -5,7 +5,7 @@ var url = window.location.search;
         const urlParams = new URLSearchParams(url);
         var key = urlParams.get('key');
         if (key) {
-            axios.get('http://localhost:3000/products?q='+ key)
+            axios.get('https://x4vxf.sse.codesandbox.io/products?q='+ key)
             .then(response => {
                 const result = response.data.map((post,index) => {
                     count = ++index;

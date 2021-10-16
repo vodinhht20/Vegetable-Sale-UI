@@ -1,6 +1,6 @@
 var qSelect = document.querySelector.bind(document);
 
-axios.get('http://localhost:3000/products')
+axios.get('https://x4vxf.sse.codesandbox.io/products')
     .then((response) => response.data)
     .then(data => {
         var result = data.map(post => {
@@ -11,7 +11,7 @@ axios.get('http://localhost:3000/products')
     })
     .then(() => {
          // các sản phẩm trái cây
-         axios.get('http://localhost:3000/products?category=2')
+         axios.get('https://x4vxf.sse.codesandbox.io/products?category=2')
          .then((response) => response.data)
          .then(data => {
              var result = data.map(post => {
@@ -22,7 +22,7 @@ axios.get('http://localhost:3000/products')
     })
     .then(() => {
         // các sản phẩm Rau củ quả
-        axios.get('http://localhost:3000/products?category=1')
+        axios.get('https://x4vxf.sse.codesandbox.io/products?category=1')
         .then((response) => response.data)
         .then(data => {
             var result = data.map(post => {
@@ -33,7 +33,7 @@ axios.get('http://localhost:3000/products')
    })
    .then(() => {
         // các sản phẩm loại thực phaamt tươi
-        axios.get('http://localhost:3000/products?category=3')
+        axios.get('https://x4vxf.sse.codesandbox.io/products?category=3')
         .then((response) => response.data)
         .then(data => {
             var result = data.map(post => {

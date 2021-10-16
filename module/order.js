@@ -25,7 +25,7 @@ async function main() {
                 createdAt: Date.parse(new Date),
                 order_details: arrCart,
             }
-            axios.post('http://localhost:3000/order',dataPost)
+            axios.post('https://x4vxf.sse.codesandbox.io/order',dataPost)
                 .then(() => {
                     localStorage.removeItem('cart');
                     alert('Bạn đã đặt hàng thành công');

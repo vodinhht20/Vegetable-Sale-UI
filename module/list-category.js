@@ -13,7 +13,7 @@ function showData(index,name,id,status) {
         </tr>`;
 }
 async function main() {
-    await axios.get('http://localhost:3000/categories')
+    await axios.get('https://x4vxf.sse.codesandbox.io/categories')
         .then((response) => response.data)
         .then(data => {
             var result = data.map((post,index) => {
@@ -36,7 +36,7 @@ function updateStatus () {
                             var dataPost = {
                                 disabled: status
                             }
-                            axios.patch('http://localhost:3000/categories/'+idCategory, dataPost)
+                            axios.patch('https://x4vxf.sse.codesandbox.io/categories/'+idCategory, dataPost)
                         },100)
                 })
             });
